@@ -1,6 +1,6 @@
 import { ChangeEvent, useState, useContext } from 'react';
 
-import { Box, Button, TextField } from "@mui/material";
+import { Box, Button, TextField } from '@mui/material';
 
 import AddIcon from '@mui/icons-material/AddCircleOutline';
 import CancelIcon from '@mui/icons-material/Cancel';
@@ -59,7 +59,7 @@ export const NewEntry = () => {
 
               <Button
                 variant='outlined'
-                color="error"
+                color='error'
                 endIcon={ <CancelIcon /> }
                 onClick={ cleanUp }
               >
@@ -68,7 +68,7 @@ export const NewEntry = () => {
               
               <Button
                 variant='outlined'
-                color="secondary"
+                color='secondary'
                 endIcon={ <SaveIcon /> }
                 onClick={ onSave }
               >

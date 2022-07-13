@@ -1,6 +1,6 @@
 import { DragEvent, FC, useContext, useMemo } from 'react';
 
-import { List, Paper } from "@mui/material";
+import { List, Paper } from '@mui/material';
 
 import { EntryStatus } from '../../interfaces';
 import { EntriesContext } from '../../context/entries';

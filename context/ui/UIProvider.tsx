@@ -40,4 +40,3 @@ export const UIProvider:FC = ({ children }) => {
         </UIContext.Provider>
     )
 };
-
