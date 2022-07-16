@@ -30,7 +30,7 @@ export const NewEntry = () => {
   const onSave = () => {
     if( inputValue.length === 0 ) return;
 
-    addNewEntry(inputValue); 
+    addNewEntry(inputValue, true); 
     cleanUp();
   }
 

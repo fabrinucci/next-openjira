@@ -41,8 +41,6 @@ export const entriesReducer = ( state: EntriesState, action: EntriesActionType )
         ...state,
         entries: [ ...action.payload ]
       }
-    
-
 
     default:
       return state;

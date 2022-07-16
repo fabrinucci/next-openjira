@@ -37,7 +37,7 @@ const valideStatus: EntryStatus[] = ['pending', 'in-progress', 'finished'];
 
 const EntriesPage: FC<Props> = ({ entry }) => {
 
-  const { updateEntry } = useContext(EntriesContext);
+  const { updateEntry, deleteEntry } = useContext(EntriesContext);
   const router = useRouter();
   
   const [inputValue, setInputValue] = useState( entry.description );
@@ -70,9 +70,8 @@ const EntriesPage: FC<Props> = ({ entry }) => {
   }
 
   const onDelete = () => {
-    console.log({ entry });
-    // dbEntries.remove( entry._id );
-    // router.push('/');
+    deleteEntry( entry._id, true );
+    router.push('/');
   }
 
   const date = dateFuntions.getFormatDistanceToNow(entry.createdAt);
