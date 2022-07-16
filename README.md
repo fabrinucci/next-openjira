@@ -33,9 +33,8 @@ docker-compose up -d
 MONGODB_URL=mongodb://localhost:27017/entriesdb
 ```
 to:
-``` 
+```
 NEXT_PUBLIC_MONGODB_URL=mongodb://localhost:27017/entriesdb  
-
 ```
 
 * Filling the database with test data:

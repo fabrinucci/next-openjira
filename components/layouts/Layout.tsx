@@ -6,23 +6,23 @@ import { Navbar, Sidebar } from '../ui';
 
 
 interface Props {
-    title?: string;
+  title?: string;
 }
 
 export const Layout:FC<Props> = ({ title = 'OpenJira', children }) => {
   return (
-      <Box sx={{ flexFlow: 1 }}>
-          <Head>
-                <title>{ title }</title>
-          </Head>
+    <Box sx={{ flexFlow: 1 }}>
+      <Head>
+        <title>{ title }</title>
+      </Head>
 
-            <Navbar />
-            <Sidebar />
+      <Navbar />
+      <Sidebar />
 
-            <Box sx={{ padding: '10px 20px'  }}>
-                { children }
-            </Box>
-
+      <Box sx={{ padding: '10px 20px'  }}>
+        { children }
       </Box>
+
+    </Box>
   )
 };
